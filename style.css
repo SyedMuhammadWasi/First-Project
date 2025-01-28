@@ -1,0 +1,406 @@
+*{
+    font-family: gilroy;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #008ED0;
+}
+
+.myColor{
+    background: #002750;
+    padding-top: 20px;  
+}
+
+.whiteColor{
+    color: white;
+}
+
+.boldStyle{
+    font-weight: 600;
+}
+
+.feroziColor{
+    color: #002750;
+}
+
+.lightBlueColor{
+    background-color: #008ED0;
+}
+
+.froziColor{
+    color: #008ED0;
+    font-weight: 900;
+}
+
+.fontWeight{
+  font-weight: 600;
+}
+
+.productBorder{
+    border: 4px solid #008ED0;
+}
+
+.linkHover:hover{
+    color: #008ED0;
+}
+
+/* Header Section */
+.header {
+    background: #002750;
+    color: white;
+    padding: 50px 20px;
+}
+
+.header .left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.header-buttons button {
+    margin-right: 10px;
+}
+
+.header .right-content img {
+    max-width: 100%;
+}
+
+.myPicStyle{
+    width: 60%;
+    /* border: 5px solid blue; */
+    position: relative;
+    right: -200px;
+}
+
+.myBtnStyle{
+    background-color: #008ED0;
+    color: #002750;
+    font-weight: 900
+}
+
+.myBtnStyle:hover{
+    background-color: transparent;
+    color: #008ED0;
+    border: 2px solid #008ED0;
+}
+
+/* Products Section */
+
+.pSize{
+    width: 300px;
+    height: 300px;
+}
+
+.products {
+    padding: 20px;
+    text-align: center;
+}
+.product-card {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: #fff;     
+    height: 100%; /* Ensures all cards have the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 5px solid #002750; /* Updated border color */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 32px #002750 ;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #f9f9f9;
+}
+
+.product-card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: 900;
+    color: #002750;
+    margin-bottom: 10px;
+}
+
+.btn-buy {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background-color: #0056b3;
+}
+
+.show-option {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #002750;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.show-option:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product-card:hover .show-option {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.newest-products-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #002750;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Section */
+.sectionclass{
+  border-radius: 5%;
+  background-color: #002750;
+  border: 50px solid #008ED0;
+}
+/* .secondsectionclass{
+
+} */
+
+.smargin{
+  margin-top: -50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/* footer */
+
+footer {
+    background-color: #002750;
+    padding: 40px 20px;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 18px;
+    color: #008ED0;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #008ED0;
+}
+
+.newsletter input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+}
+
+.newsletter button {
+    background-color: #008ED0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover{
+    background-color: #008ED0;
+}
+
+
+.footer-bottom {
+    background-color: #008ED0;
+    color: #002750;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer-bottom a {
+    color: #002750;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* contact us  */
+
+#contact {
+    background-color: #002750;
+    padding: 50px 20px;
+}
+
+#contact h2 {
+    color: #008ED0;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#contact .form-control {
+    border: 4px solid #008ED0;
+    border-radius: 5px;
+}
+
+#contact .btn {
+    background-color: #008ED0;
+    color: white;
+    border: none;
+}
+
+#map {
+    height: 100%;
+    min-height: 300px;
+    border: none;
+}
+
+/* comparision section */
+
+.comparison-section {
+    padding: 50px 20px;
+}
+
+.comparison-card {
+    background-color: #ffffff;
+    border: 5px solid #002750;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comparison-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.comparison-card img {
+    width: 100%;
+    height: 200px; /* Adjusted for better size */
+    object-fit: cover; /* Ensures the image fits nicely */
+}
+
+.comparison-card .card-body {
+    padding: 20px;
+}
+
+.comparison-card h5 {
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.comparison-card p {
+    color: #666;
+}
+
+.comparison-card ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.comparison-card ul li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.comparison-card .btn {
+    background-color: #008ED0;
+    color: white;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .comparison-card {
+        margin-bottom: 20px;
+    }
+}
